@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Publications for Author: <span id="author-name"></span></h1>
+        <a href="index.html" class="search-button">Back to Search</a>
+    </div>
+
+    <div class="chart-container">
+        <h2 class="chart-title">Citation Impact</h2>
+        <canvas id="impactChart"></canvas>
+    </div>
+
+    <div id="publications-container">
+        <h2>Publications</h2>
+        <div id="publications-list">
+            <!-- Publication details will be displayed here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

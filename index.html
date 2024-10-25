@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication Impact Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Publication Impact Statistics</h1>
+        <form id="author-form" class="search-form">
+            <input 
+                type="text" 
+                id="author" 
+                class="search-input"
+                placeholder="Enter researcher's name..."
+                required
+            >
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+
+    <div id="author-info">
+        <!-- Author selection cards will be displayed here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
